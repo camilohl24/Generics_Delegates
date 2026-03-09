@@ -1,4 +1,11 @@
 <Solution>
-  <Project Path="Delegates/Delegates.csproj" Id="d6185b05-2211-49fd-a8e1-0145a97e9411" />
-  <Project Path="Generics_Delegates/Generics.csproj" Id="8cb3f88e-721f-44bc-b6df-b2cb70105146" />
+  <Folder Name="/BasicConcepts/">
+    <File Path="Delegates/Program.cs" />
+    <Project Path="Delegates/Delegates.csproj" Id="d6185b05-2211-49fd-a8e1-0145a97e9411" />
+    <Project Path="Generics_Delegates/Generics.csproj" Id="8cb3f88e-721f-44bc-b6df-b2cb70105146" />
+  </Folder>
+  <Folder Name="/Practiceproyect/">
+    <Project Path="Backend/Backend.csproj" Id="95603fa7-c522-40b6-93ae-30bb389cb79e" />
+    <Project Path="Front/Front.csproj" Id="c8bd44aa-b872-4844-a81a-31893d661207" />
+  </Folder>
 </Solution>
