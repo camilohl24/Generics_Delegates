@@ -4,17 +4,23 @@
     {
 
         private int _miliage;
+        private int _consumption;
         public string Brand { get; set; } = null!;
         public string Model { get; set; } = null!;
         public int Miliage
         {
             get => _miliage; 
-            set => _miliage = value;
+            set => _miliage = ValidateMiliage(value);
+        }
+        public int Consumption
+        {
+            get => _consumption;
+            set => _consumption = ValidateConsumption(value); 
         }
 
         public override string ToString() => $"Brand: {Brand,10},\t Model: {Model,10},\t Miliage: {Miliage,10}\n";
 
-        private int validateMiliage(int miliage)
+        private int ValidateMiliage(int miliage)
         {
             if (miliage < 0)
             {
@@ -22,8 +28,14 @@
             }
             return miliage;
         }
-
-
+        private int ValidateConsumption(int consumption)
+        {
+            if (consumption < 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(consumption), "Consumpytion cannot be negative.");
+            }
+            return consumption;
+        }
 
 
     }

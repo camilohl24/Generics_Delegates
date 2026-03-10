@@ -1,6 +1,7 @@
 <Solution>
   <Folder Name="/BasicConcepts/">
     <File Path="Delegates/Program.cs" />
+    <Project Path="ActionAndFunc/ActionAndFunc.csproj" Id="7693eac9-8ff8-4fb7-8451-c58264a6dcf7" />
     <Project Path="Delegates/Delegates.csproj" Id="d6185b05-2211-49fd-a8e1-0145a97e9411" />
     <Project Path="Generics_Delegates/Generics.csproj" Id="8cb3f88e-721f-44bc-b6df-b2cb70105146" />
   </Folder>

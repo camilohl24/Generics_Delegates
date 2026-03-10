@@ -14,7 +14,7 @@ Console.WriteLine("_____________________________________________________________
 
 Almacen<Vehicle> barados = new Almacen<Vehicle>();
 
-foreach (var vehicle in vehicles)
+foreach (Vehicle vehicle in vehicles)
 {
     barados.Add(vehicle);
 }
@@ -24,7 +24,7 @@ Console.WriteLine($"___________Siguiente vehiculo por reparar___________________
 Console.WriteLine(next1);
 
 Console.WriteLine("___________________Resultados de la revision__________________________: \n");
-MaintenanceTask maintenance = taller.CheckMiliage;
+MaintenanceTask  maintenance =  taller.CheckMiliage;
 maintenance += taller.CheckBrand;
 maintenance += taller.checKEngine;
 maintenance += taller.CheckBreakes;
@@ -34,6 +34,8 @@ barados.deleteItem(1);
 Console.WriteLine("---------------Vehiculos varados en el momento.....................: ");
 Console.WriteLine("____________________________________________________________________\n");
 barados.ShowInventory();
-delegate void MaintenanceTask(Vehicle vehicle);
+
+
+
 
 
